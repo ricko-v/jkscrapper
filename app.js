@@ -13,4 +13,9 @@ app.use('/', routes);
 // default catch all handler
 app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
 
+// Uncomment this to develop :>
+// app.listen(8080, () => {
+//     console.log(`Example app listening on port ${8080}`)
+// });
+
 module.exports = app;

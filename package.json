@@ -5,11 +5,15 @@
   "main": "app.js",
   "scripts": {
     "start": "vercel dev",
-    "test": "jest -i"
+    "test": "jest -i",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "express": "^4.17.1",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "nodemon": "^2.0.22",
+    "request": "^2.88.2"
   },
   "keywords": [
     "vercel"
