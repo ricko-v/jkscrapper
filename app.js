@@ -8,6 +8,7 @@ const app = express();
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use(helmet());
+app.set('json spaces', 2)
 app.use('/', routes);
 
 // default catch all handler
