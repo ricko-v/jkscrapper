@@ -21,7 +21,7 @@ r.get('/', (req, res) => {
             let last = Number(a) % 10 == 0 ? Number(a) / 10 : (Number(a) - (Number(a) % 10)) / 10 + 1
 
             $('body').find("#citatenrijen > li").each(function () {
-                let kata = $(this).find('q').text();
+                let kata = $(this).find('q').first().text();
                 let nama = $(this).find('.citatenlijst-auteur > a').text();
                 let keterangan = $(this).find('.citatenlijst-auteur > .auteur-beschrijving').text();
                 let sumber = $(this).find('.bron-citaat').text().trim();
